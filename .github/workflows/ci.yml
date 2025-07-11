@@ -1,0 +1,46 @@
+name: CI - Git Log HTML Report
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy: # <--- Added this strategy block
+      matrix:
+        node-version: [18, 20, 22, 24] # Updated to include Node.js 24 (Current)
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js ${{ matrix.node-version }} # <--- Updated name to reflect matrix
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }} # <--- Uses matrix variable
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run build script
+        run: npm run build
+
+      - name: Run tests (if any)
+        run: npm test
+
+      - name: Generate Git Log HTML Report
+        run: |
+          node git-log-html-report.js
+          ls -la
+
+      - name: Upload HTML Report Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: git-log-html-report-${{ github.sha }}-${{ matrix.node-version }} # <--- MODIFIED: Added matrix.node-version to the artifact name
+          path: |
+            commit.html
+            commit.log
+          retention-days: 5

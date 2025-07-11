@@ -1,0 +1,72 @@
+{
+  "name": "git-log-html-report",
+  "version": "1.0.0",
+  "description": "Generate clean, themed, and printable HTML reports from Git logs with timestamps and commit metadata.",
+  "type": "module",
+  "bin": {
+    "git-log-html-report": "git-log-html-report.js"
+  },
+  "files": [
+    "git-log-html-report.js",
+    "README.md",
+    "README.en.md",
+    "README.de.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "postinstall": "node postinstall-message.js",
+    "test": "vitest run",
+    "build": "echo \"No build step needed for this CLI tool\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sajjad-developer/git-log-html-report.git"
+  },
+  "keywords": [
+    "git",
+    "git-log",
+    "git-report",
+    "git-commits",
+    "html-report",
+    "commit-log",
+    "cli-tool",
+    "dark-theme",
+    "light-theme",
+    "pdf-export",
+    "copy-to-clipboard",
+    "clickable-commit-link",
+    "timestamp",
+    "iso-date",
+    "local-date",
+    "accessibility",
+    "screen-reader",
+    "developer-tools",
+    "git-visualizer",
+    "terminal-to-html",
+    "open-source",
+    "report-generator"
+  ],
+  "author": {
+    "name": "Md Sajjad Hossen",
+    "url": "https://eco-starfish-coder.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sajjad-developer/git-log-html-report/issues"
+  },
+  "homepage": "https://github.com/sajjad-developer/git-log-html-report#readme",
+  "funding": {
+    "url": "https://eco-starfish-coder.com/tip"
+  },
+  "engines": {
+    "node": ">=14"
+  },
+  "dependencies": {
+    "ansi-to-html": "^0.7.2",
+    "chalk": "^5.4.1",
+    "strip-ansi": "^7.1.0"
+  },
+  "devDependencies": {
+    "vitest": "^3.2.4"
+  }
+}
