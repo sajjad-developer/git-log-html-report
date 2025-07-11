@@ -1,4 +1,4 @@
-import { execSync } from "child_process";
+import { execFileSync } from "child_process";
 import { dirname, join } from "path";
 import { fileURLToPath } from "url";
 import { describe, expect, it } from "vitest";
@@ -8,7 +8,7 @@ const scriptPath = join(__dirname, "../postinstall-message.js");
 
 describe("postinstall-message.js", () => {
   it("should run without errors and print key lines", () => {
-    const output = execSync(`node ${scriptPath}`).toString();
+    const output = execFileSync("node", [scriptPath]).toString();
 
     expect(output).toMatch(/Thank you for installing git-log-html-report/i);
     expect(output).toMatch(/git-log-html-report/);
