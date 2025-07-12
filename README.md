@@ -20,8 +20,8 @@
   <a href="https://github.com/sajjad-developer/git-log-html-report/issues?q=is%3Aissue+is%3Aopen+label%3Ahelp-wanted" target="_blank" rel="noopener noreferrer">
     <img src="https://img.shields.io/github/issues/sajjad-developer/git-log-html-report/help-wanted?label=help%20wanted" alt="help wanted" title="Help wanted issues" />
   </a>
-  <a href="https://bundlephobia.com/result?p=git-log-html-report" target="_blank" rel="noopener noreferrer">
-    <img src="https://img.shields.io/bundlephobia/minzip/git-log-html-report?label=bundle%20size" alt="bundle size" title="Bundle size (minified + gzip)" />
+  <a href="https://packagephobia.com/result?p=git-log-html-report" target="_blank" rel="noopener noreferrer">
+  <img src="https://packagephobia.com/badge?p=git-log-html-report" alt="install size" title="Install size (via PackagePhobia)" />
   </a>
 </p>
 
@@ -30,6 +30,30 @@
 <p align="center">
   <code>git-log-html-report</code> — A powerful CLI tool that instantly converts your Git commit history into clean, themed, and printable HTML reports with detailed timestamps and commit metadata. It syncs local and remote changes for effortless tracking, designed for solo developers and teams.
 </p>
+
+---
+
+### 🚀 Installation
+
+Install globally via npm:
+
+```bash
+npm install -g git-log-html-report
+```
+
+Or run directly without global installation using npx
+
+```bash
+npx git-log-html-report
+```
+
+---
+
+Navigation Links for Your Convenience
+
+- [📦 Usage](README.en.md#-usage)
+- [📋 Requirements](README.en.md#-requirements)
+- [📸 Step-by-Step Screenshots, Quick Reference & Feature Highlights](README.en.md#-step-by-step-screenshots-quick-reference--feature-highlights)
 
 ---
 
@@ -59,22 +83,22 @@
 
 ### 🙌 Contributing
 
-Contributions are welcome and appreciated!  
+Contributions are welcome and appreciated!
 You can help by improving the code, reporting bugs, suggesting features, or fixing documentation.
 
 Please see [CONTRIBUTING.md](CONTRIBUTING.md) for full guidelines.
 
-> 💡 All contributions are voluntary.  
+> 💡 All contributions are voluntary.
 > **Financial tips are a personal gesture to the maintainer and are not shared with contributors.**
 
 ---
 
 ### ☕ Support My Work
 
-✨ This project is developed and maintained by me during my personal time.  
+✨ This project is developed and maintained by me during my personal time.
 If `git-log-html-report` has saved you time or improved your workflow, please consider leaving a **voluntary tip** to support ongoing development:
 
 [![❤️ Tip Me](https://img.shields.io/badge/Tip%20Me-❤️-brightgreen "Your support helps keep the git-log-html-report tool free, polished, and open for everyone.")](https://eco-starfish-coder.com/tip)
 
-> ⚠️ **Note:** Tips are optional and go directly to the maintainer (me).  
+> ⚠️ **Note:** Tips are optional and go directly to the maintainer (me).
 > This project is open-source and free to use. Contributions are welcome, but not financially compensated.
