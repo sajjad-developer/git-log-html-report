@@ -49,7 +49,7 @@ npx git-log-html-report
 
 ---
 
-Navigation Links for Your Convenience
+### 🔗 Quick Links
 
 - [📦 Usage](README.en.md#-usage)
 - [📋 Requirements](README.en.md#-requirements)
