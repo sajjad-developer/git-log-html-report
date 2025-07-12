@@ -1,17 +1,13 @@
 // postinstall-message.js
 import chalk from "chalk";
 
-// Check if the CI environment variable is set to a truthy value.
-// This is a common practice to detect automated environments like GitHub Actions,
-// Packagephobia, etc.
-if (process.env.CI) {
-  // If in a CI environment, exit silently.
-  // This prevents unnecessary output during automated installs and prevents
-  // Packagephobia from failing due to unexpected output or behavior.
+// Use a custom environment variable for conditional logic.
+// This is more reliable as CI systems are less likely to override it.
+// Also keep process.env.CI check as a fallback for general CI detection.
+if (process.env.CI || process.env.GIT_LOG_HTML_REPORT_CI_TEST === "true") {
   process.exit(0);
 }
 
-// If not in a CI environment, print the welcome message as intended for local users.
 console.log(
   chalk.cyan("✨ Thank you for installing git-log-html-report!") +
     "\n\n" +
