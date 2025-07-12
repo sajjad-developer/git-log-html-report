@@ -1,6 +1,16 @@
 // postinstall-message.js
 import chalk from "chalk";
 
+// Detect if running in a CI environment (like Packagephobia's sandbox)
+// process.env.CI is a common environment variable set in many CI/CD systems.
+// process.env.NODE_ENV === 'test' is another common check.
+// Packagephobia might set its own specific env var, but CI is a good general one.
+if (process.env.CI || process.env.PACKAGEPHOBIA_TEST) {
+  // PACKAGEPHOBIA_TEST is hypothetical, but CI is often set
+  // console.log(chalk.gray("Skipping postinstall message in CI/automated environment."));
+  process.exit(0); // Exit successfully without printing the message
+}
+
 console.log(
   chalk.cyan("✨ Thank you for installing git-log-html-report!") +
     "\n\n" +
