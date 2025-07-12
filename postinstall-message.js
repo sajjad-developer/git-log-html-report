@@ -1,10 +1,12 @@
 // postinstall-message.js
 import chalk from "chalk";
 
-// Use a custom environment variable for conditional logic.
-// This is more reliable as CI systems are less likely to override it.
-// Also keep process.env.CI check as a fallback for general CI detection.
-if (process.env.CI || process.env.GIT_LOG_HTML_REPORT_CI_TEST === "true") {
+// Only run the message if NOT in CI or automated test environment
+const isCI = process.env.CI === "true";
+const isCustomCITest = process.env.GIT_LOG_HTML_REPORT_CI_TEST === "true";
+
+if (isCI || isCustomCITest) {
+  // Exit silently in CI or test environment
   process.exit(0);
 }
 
