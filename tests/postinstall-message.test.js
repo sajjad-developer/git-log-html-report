@@ -13,8 +13,7 @@ describe("postinstall-message.js", () => {
   beforeEach(() => {
     // Store original CI env var state before each test
     originalCIEnv = process.env.CI;
-    // Temporarily set CI to 'false' for the test to ensure postinstall-message.js runs
-    // This allows the test to always receive output from postinstall-message.js
+    // Temporarily set CI to 'false' for the test runner's process
     process.env.CI = "false";
   });
 
@@ -25,7 +24,11 @@ describe("postinstall-message.js", () => {
 
   it("should run without errors and print key lines", () => {
     // Execute the postinstall-message.js script
-    const output = execFileSync("node", [scriptPath]).toString();
+    // Pass the modified environment explicitly to the child process
+    // This ensures the child process (postinstall-message.js) sees CI: 'false'
+    const output = execFileSync("node", [scriptPath], {
+      env: { ...process.env, CI: "false" }, // Pass all current env vars, but explicitly set CI to 'false'
+    }).toString();
 
     // Assert that the output matches the expected messages
     expect(output).toMatch(/Thank you for installing git-log-html-report/i);
