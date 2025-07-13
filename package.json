@@ -1,6 +1,6 @@
 {
   "name": "git-log-html-report",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Generate clean, themed, and printable HTML reports from Git logs with timestamps and commit metadata.",
   "type": "module",
   "main": "git-log-html-report.js",
