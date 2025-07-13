@@ -98,7 +98,7 @@ Please see [CONTRIBUTING.md](CONTRIBUTING.md) for full guidelines.
 ✨ This project is developed and maintained by me during my personal time.
 If `git-log-html-report` has saved you time or improved your workflow, please consider leaving a **voluntary tip** to support ongoing development:
 
-[![❤️ Tip Me](https://img.shields.io/badge/Tip%20Me-❤️-brightgreen "Your support helps keep the git-log-html-report tool free, polished, and open for everyone.")](https://eco-starfish-coder.com/tip)
+[![❤️ ☕ Tip the Developer](https://img.shields.io/badge/Tip%20Me-❤️-brightgreen "Your support helps keep the git-log-html-report tool free, polished, and open for everyone.")](https://eco-starfish-coder.com/tip)
 
 > ⚠️ **Note:** Tips are optional and go directly to the maintainer (me).
 > This project is open-source and free to use. Contributions are welcome, but not financially compensated.

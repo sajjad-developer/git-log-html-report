@@ -1,8 +1,9 @@
 {
   "name": "git-log-html-report",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Generate clean, themed, and printable HTML reports from Git logs with timestamps and commit metadata.",
   "type": "module",
+  "main": "git-log-html-report.js",
   "bin": {
     "git-log-html-report": "git-log-html-report.js"
   },
@@ -14,8 +15,8 @@
     "LICENSE"
   ],
   "scripts": {
-    "postinstall": "node postinstall-message.js",
     "test": "vitest run",
+    "test:watch": "vitest",
     "build": "echo \"No build step needed for this CLI tool\""
   },
   "repository": {

@@ -20,7 +20,7 @@
 [![license](https://img.shields.io/npm/l/git-log-html-report?label=license "Project license")](https://github.com/sajjad-developer/git-log-html-report/blob/main/LICENSE)
 ![built with Node.js](https://img.shields.io/badge/built%20with-Node.js-brightgreen "Built with Node.js")
 [![GitHub stars](https://img.shields.io/github/stars/sajjad-developer/git-log-html-report?style=social&label=GitHub%20stars "GitHub repository stars")](https://github.com/sajjad-developer/git-log-html-report)
-[![Bundle Size (min+gzip)](https://img.shields.io/bundlephobia/minzip/git-log-html-report?label=bundle%20size "Minified + gzip bundle size")](https://bundlephobia.com/result?p=git-log-html-report)
+[![Install size](https://packagephobia.com/badge?p=git-log-html-report)](https://packagephobia.com/result?p=git-log-html-report)
 
 > **All your commits—fully synced. Track every change across local and remote repositories without switching tabs to your GitHub repo. `git-log-html-report` brings clarity and confidence to solo developers and teams alike.**
 
@@ -359,4 +359,4 @@ MIT © [Md Sajjad Hossen](https://github.com/sajjad-developer)
 ✨ This project is developed and maintained by me during my personal time.  
 If `git-log-html-report` has saved you time or improved your workflow, consider leaving a **voluntary tip** to support ongoing development:
 
-[![❤️ Tip Me](https://img.shields.io/badge/Tip%20Me-❤️-brightgreen "Your support helps keep the git-log-html-report tool free, polished, and open for everyone.")](https://eco-starfish-coder.com/tip)
+[![❤️ ☕ Tip the Developer](https://img.shields.io/badge/Tip%20Me-❤️-brightgreen "Your support helps keep the git-log-html-report tool free, polished, and open for everyone.")](https://eco-starfish-coder.com/tip)
