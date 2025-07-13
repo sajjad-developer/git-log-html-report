@@ -6,6 +6,70 @@ import AnsiToHtml from "ansi-to-html";
 import chalk from "chalk"; // ✅ Add colorful terminal output
 import { execSync } from "child_process";
 import fs from "fs";
+import os from "os";
+import path from "path";
+
+// Detect debug flag
+const args = process.argv.slice(2);
+const isDebug = args.includes("--debug");
+
+const welcomeFile = path.join(os.homedir(), ".git-log-html-report-welcome");
+
+if (isDebug) {
+  console.log("Welcome file path:", welcomeFile);
+}
+
+// Function to check if welcome message was shown before by checking a flag file
+const checkWelcomeMessage = () => {
+  const homeDir = os.homedir();
+  const flagFile = path.join(homeDir, ".git-log-html-report-welcome");
+
+  try {
+    if (fs.existsSync(flagFile)) {
+      // Flag file exists, so not first run — don't show welcome message
+      return false;
+    } else {
+      // Flag file missing, first run — show welcome message and create file
+      fs.writeFileSync(flagFile, "Welcome message shown");
+      return true;
+    }
+  } catch (err) {
+    // On error, fail safely by showing welcome message
+    return true;
+  }
+};
+
+// Show welcome message only on first run
+if (checkWelcomeMessage()) {
+  console.log(
+    chalk.bgBlueBright.black.bold(
+      "\n✨ Thank you for installing `git-log-html-report`!"
+    )
+  );
+  console.log(
+    chalk.bgBlueBright.black.bold("🚀 Hope it boosts your Git workflow!")
+  );
+  console.log(); // Spacer
+
+  console.log(
+    chalk.bgBlueBright.black.bold(
+      "💡 Saved you time or improved your productivity?"
+    )
+  );
+  console.log(
+    chalk.bgBlueBright.black.bold("❤️  Consider supporting its development:")
+  );
+  console.log(); // Spacer
+
+  const tipText =
+    "  💛  ☕ Tip the Developer → https://eco-starfish-coder.com/tip  💛  ";
+  const border = " ".repeat(tipText.length);
+
+  console.log(chalk.bgHex("#ffcc00").hex("#000000").bold(border));
+  console.log(chalk.bgHex("#ffcc00").hex("#000000").bold(tipText));
+  console.log(chalk.bgHex("#ffcc00").hex("#000000").bold(border));
+  console.log(); // Final spacer
+}
 
 console.log(chalk.bold.cyan("\n📘 Git Commit Log Report Generator\n")); // ✅ Intro banner
 
@@ -869,18 +933,3 @@ console.log(
 );
 console.log(chalk.bold.cyan("\n✅ Done! Commit report generated.\n"));
 // ✅ completion banner
-
-// Friendly reminder to support development if the tool helped you
-console.log(
-  chalk.bgBlueBright.black.bold("✨ Tool saved you time or added value?")
-);
-console.log(chalk.bgBlueBright.black.bold("   Support me:")); // Optional label
-
-console.log(); // spacing
-
-console.log(
-  chalk
-    .bgHex("#00b9fe")
-    .hex("#fff")
-    .bold(" ☕ Tip Me: https://eco-starfish-coder.com/tip ")
-);
