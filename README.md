@@ -23,6 +23,10 @@
   <a href="https://packagephobia.com/result?p=git-log-html-report" target="_blank" rel="noopener noreferrer">
   <img src="https://packagephobia.com/badge?p=git-log-html-report" alt="install size" title="Install size (via PackagePhobia)" />
   </a>
+  <!-- Add the npm downloads badge here -->
+  <a href="https://www.npmjs.com/package/git-log-html-report" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.shields.io/npm/dt/git-log-html-report?label=total%20downloads" alt="total npm downloads" title="Total npm downloads" />
+  </a>
 </p>
 
 <p align="center"><strong>✨ Connect once. View forever. Your GitHub commit history, now in your hands.</strong></p>
@@ -98,7 +102,7 @@ Please see [CONTRIBUTING.md](CONTRIBUTING.md) for full guidelines.
 ✨ This project is developed and maintained by me during my personal time.
 If `git-log-html-report` has saved you time or improved your workflow, please consider leaving a **voluntary tip** to support ongoing development:
 
-[![❤️ ☕ Tip the Developer](https://img.shields.io/badge/Tip%20Me-❤️-brightgreen "Your support helps keep the git-log-html-report tool free, polished, and open for everyone.")](https://eco-starfish-coder.com/tip)
+[![☕ Tip the Developer ❤️](https://img.shields.io/badge/%E2%98%95%EF%B8%8F%20Tip%20the%20Developer%20%E2%9D%A4%EF%B8%8F-brightgreen "Your support helps keep the git-log-html-report tool free, polished, and open for everyone.")](https://eco-starfish-coder.com/tip)
 
 > ⚠️ **Note:** Tips are optional and go directly to the maintainer (me).
 > This project is open-source and free to use. Contributions are welcome, but not financially compensated.

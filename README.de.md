@@ -363,4 +363,4 @@ MIT © [Md Sajjad Hossen](https://github.com/sajjad-developer)
 ✨ Dieses Projekt wird von mir in meiner Freizeit entwickelt und gepflegt.
 Wenn `git-log-html-report` Ihnen Zeit spart oder Ihren Workflow verbessert hat, erwägen Sie bitte eine **freiwillige Unterstützung**, um die Weiterentwicklung zu fördern:
 
-[![❤️ ☕ Bitte unterstützen Sie den Entwickler](https://img.shields.io/badge/Unterst%C3%BCtzen-%E2%9D%A4%EF%B8%8F-brightgreen "Ihre Unterstützung hilft, dieses Projekt weiterhin kostenlos und offen zu halten.")](https://eco-starfish-coder.com/tip)
+[![☕ Bitte unterstützen Sie den Entwickler ❤️](https://img.shields.io/badge/%E2%98%95%EF%B8%8F%20Bitte%20unterst%C3%BCtzen%20Sie%20den%20Entwickler%20%E2%9D%A4%EF%B8%8F-brightgreen "Ihre Unterstützung hilft, dieses Projekt weiterhin kostenlos und offen zu halten.")](https://eco-starfish-coder.com/tip)

@@ -359,4 +359,4 @@ MIT © [Md Sajjad Hossen](https://github.com/sajjad-developer)
 ✨ This project is developed and maintained by me during my personal time.  
 If `git-log-html-report` has saved you time or improved your workflow, consider leaving a **voluntary tip** to support ongoing development:
 
-[![❤️ ☕ Tip the Developer](https://img.shields.io/badge/Tip%20Me-❤️-brightgreen "Your support helps keep the git-log-html-report tool free, polished, and open for everyone.")](https://eco-starfish-coder.com/tip)
+[![☕ Tip the Developer ❤️](https://img.shields.io/badge/%E2%98%95%EF%B8%8F%20Tip%20the%20Developer%20%E2%9D%A4%EF%B8%8F-brightgreen "Your support helps keep the git-log-html-report tool free, polished, and open for everyone.")](https://eco-starfish-coder.com/tip)
